@@ -2,8 +2,8 @@ class Player {
     constructor(){}
 
     getCount(){
-       var stateref = database.ref("playerCount")
-        stateref.on('value',function(data){
+       var playref = database.ref("playerCount")
+        playref.on('value',function(data){
             playerCount = data.val()
         })
     }
